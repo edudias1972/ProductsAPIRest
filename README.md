@@ -11,7 +11,9 @@ https://start.spring.io/
 
 Products API RestFul
 
-Projeto Spring Boot 3  e  Java 17 LTS Oracle 
+Técnologias Utilizadas 
+
+Projeto Spring Boot 3  /  Java 17 LTS Oracle 
 
 Spring Web MVC
 
@@ -20,6 +22,9 @@ Spring Data
 Spring Validation 
 
 Spring Hateoas 
+
+Banco de dados POSTGRESQL 
+
 
 2) Instale e configure o POSTGRESQL defições application.properties
 
@@ -30,7 +35,7 @@ spring.datasource.url= jdbc:postgresql://localhost:5432/products-api
 
 # Definindo datasource credenciais Autenticação:
 spring.datasource.username=postgres
-spring.datasource.password=banco123
+spring.datasource.password=postgres
 
 # Mapeamento Atualizar os dados no BD tabelas e colunas :
 spring.jpa.hibernate.dll-auto=update
@@ -56,9 +61,8 @@ bash
 POST http://localhost:8080/products
 
 {
-  "name": "Produto Exemplo",
-  "price": 19.99,
-  "description": "Este é um exemplo de produto."
+  "name": "Martelo",
+  "price": 19.99
 }
 
 4) Listando Produtos (GET)
