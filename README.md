@@ -1,5 +1,14 @@
 # ProductsAPIRest
 
+* Aplicar o conhecimento do ecossistema Spring para criar rotas da API.
+* Aplicar a injeção de dependência para conectar as camadas de controle, serviço e persistência.
+* Utilizar o Spring Data JPA para implementar entidades e repositórios para a persistência em banco de dados, bem como implementar buscas customizadas.
+
+Products API RestFul
+O que deverá ser desenvolvido?
+Esta é a documentação da API RestFul para gerenciamento de produtos. A API oferece operações CRUD (Create, Read, Update, Delete) para a entidade "products". 
+Abaixo, você encontrará informações sobre como usar cada uma dessas operações.
+
 Products API RestFul 
 
 Esse projeto é um CRUD de produtos 
@@ -45,11 +54,6 @@ spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Products API RestFul
-
-Esta é a documentação da API RestFul para gerenciamento de produtos. A API oferece operações CRUD (Create, Read, Update, Delete) para a entidade "products". 
-Abaixo, você encontrará informações sobre como usar cada uma dessas operações.
-
 3) Criando um Produto (POST)
 
 Para criar um novo produto, faça uma requisição POST para a rota /products com os dados do produto no corpo da requisição. Os campos obrigatórios são name, price e description.
@@ -87,7 +91,8 @@ GET http://localhost:8080/products/211/0898989898-97ab-cnsddfbsnbsfnsnf09
 
 6) Atualizando um Produto (PUT)
 
-Para atualizar os dados de um produto, faça uma requisição PUT para a rota /products/{id}, onde {id} é o identificador único do produto que você deseja atualizar. No corpo da requisição, forneça os campos que deseja atualizar.
+Para atualizar os dados de um produto, faça uma requisição PUT para a rota /products/{id}, onde {id} é o identificador único do produto que você deseja atualizar. 
+No corpo da requisição, forneça os campos que deseja atualizar.
 
 Exemplo de requisição:
 
@@ -110,5 +115,6 @@ bash
 
 DELETE http://localhost:8080/products/211/0898989898-97ab-cnsddfbsnbsfnsnf09
 
-Lembre-se de substituir http://localhost:8080 pela URL real da sua API. Certifique-se de incluir as informações necessárias no corpo da requisição, conforme descrito nos exemplos acima, para garantir o funcionamento correto das operações CRUD da API Products.
+Lembre-se de substituir http://localhost:8080 pela URL real da sua API. Certifique-se de incluir as informações necessárias no corpo da requisição, 
+conforme descrito nos exemplos acima, para garantir o funcionamento correto das operações CRUD da API Products.
 
